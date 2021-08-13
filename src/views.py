@@ -35,7 +35,7 @@ def varify_view(request):
     if pk:
         user = CustomUser.objects.get(id=pk)
 
-        code = user.code
+        code = user.code  # user app to code app by one to one ralation
 
         print(code)
 
